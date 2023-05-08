@@ -1,6 +1,6 @@
 from aiogram.types import Message
 from aiogram.dispatcher.filters import BoundFilter
-from config import ADMINS
+from kinopoisk.config import ADMINS
 
 class IsUser(BoundFilter):
     async def check(self, message:Message) -> bool:
